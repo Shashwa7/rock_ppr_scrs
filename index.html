@@ -1,0 +1,103 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9088d4fb15.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>RPSLzSk</title>
+</head>
+
+<body>
+
+    <div id="app">
+        <div id="appTitle">
+            <img src="shelSpock.png" alt="">
+            <h1>Rock Paper Scissors Lizard Spock</h1>
+        </div>
+
+
+        <div id="instructions">
+            <h1>⚔️Instructions<button id="expand">
+                    <i class="fas fa-bars"></i>
+                </button></h1>
+            <div class="how2play">
+                <h4>➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖</h4>
+                <ul id="symbols">
+                    <li>
+                        <h2>🔰Rock :<i class="far fa-hand-rock"></i> ❌ <i class="far fa-hand-peace"></i> & <i
+                                class="far fa-hand-lizard"></i></h2>
+                    </li>
+                    <li>
+                        <h2>🔰Paper:<i class="far fa-hand-paper"></i> ❌ <i class="far fa-hand-spock"></i> & <i
+                                class="far fa-hand-rock"></i></h2>
+                    </li>
+                    <li>
+                        <h2>🔰Scissors:<i class="far fa-hand-peace"></i> ❌ <i class="far fa-hand-paper"></i> & <i
+                                class="far fa-hand-lizard"></i></h2>
+                    </li>
+                    <li>
+                        <h2>🔰Lizard:<i class="far fa-hand-lizard"></i> ❌ <i class="far fa-hand-paper"></i> & <i
+                                class="far fa-hand-spock"></i></h2>
+                    </li>
+                    <li>
+                        <h2>🔰Spock:<i class="far fa-hand-spock"></i> ❌ <i class="far fa-hand-rock"></i> & <i
+                                class="far fa-hand-peace"></i></h2>
+                    </li>
+                </ul>
+
+                <h4>➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖</h4>
+                <h2>✔️ Win = 1 point</h2>
+                <h2>✔️ Lose / Tie = 0 point</h2>
+                <h2>✔️ Each Round of 5 turns!</h2>
+                <h4>➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖</h4>
+            </div>
+
+        </div>
+
+        <h2 id="gameStatus">Click any action to start Game!</h2>
+        <div id="gameConsole">
+            <div class="players Prsn">
+                <h1>😎You: <span id="plyrStatus"></span></h1>
+                <div class="actions">
+                    <div class="action">
+                        <i class="far fa-hand-rock" id="4"></i>
+
+                    </div>
+                    <div class="action">
+                        <i class="far fa-hand-paper" id="3"></i>
+
+                    </div>
+                    <div class="action">
+                        <i class="far fa-hand-peace" id="2"></i>
+
+                    </div>
+                    <div class="action">
+                        <i class="far fa-hand-lizard" id="1"></i>
+
+                    </div>
+                    <div class="action">
+                        <i class="far fa-hand-spock" id="0"></i>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="players Cmp">
+                <h1>🤖Computer: <span id="cmpStatus"></span> </h1>
+                <div class="actions cmpAction"> </div>
+            </div>
+
+            <div id="resultDiv">
+                <h1 id="result"></h1>
+            </div>
+
+            <button id="newGame">🌞 New Game 👾</button>
+
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
