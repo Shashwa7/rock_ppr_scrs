@@ -161,7 +161,7 @@ action.addEventListener("click", (event) => {
         console.log(`PlayerTotal: ${plyrTotal} ComputerTotal: ${cmpTotal}`)
 
         if (plyrTotal > cmpTotal)
-            result.innerText = "🎊 Player Won! 🎉"
+            result.innerText = "🦄 You Won! 🎉"
         else if (plyrTotal === cmpTotal)
             result.innerText = "🐨 Draw! 🎭"
         else
