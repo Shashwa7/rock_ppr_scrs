@@ -162,6 +162,8 @@ action.addEventListener("click", (event) => {
 
         if (plyrTotal > cmpTotal)
             result.innerText = "🎊 Player Won! 🎉"
+        else if (plyrTotal === cmpTotal)
+            result.innerText = "🐨 Draw! 🎭"
         else
             result.innerText = "👾 Computer Won! 🙀"
         
